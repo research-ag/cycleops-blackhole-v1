@@ -1,6 +1,6 @@
 {
   "canisters": {
-    "empty": {
+    "blackhole": {
       "main": "./src/main.mo",
       "type": "motoko"
     }
