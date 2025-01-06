@@ -1,6 +1,6 @@
 x-base-image:
   versions:
-    moc: &moc 0.7.6 
+    dfx: &dfx 0.13.1
     mops: &mops 1.2.0
   name: &base_name "local/cycleops-v1"
 
@@ -10,7 +10,7 @@ services:
       context: .
       dockerfile: Dockerfile.base
       args:
-        MOC_VERSION: *moc
+        DFX_VERSION: *dfx
         MOPS_VERSION: *mops
     image: *base_name
   wasm:
